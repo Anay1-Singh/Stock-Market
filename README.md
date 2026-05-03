@@ -15,13 +15,12 @@ A professional, real-time stock market dashboard built with React and Vite. This
 ## Setup and Installation
 
 1. Clone the repository to your local machine.
-2. Navigate to the Frontend directory.
-3. Run `npm install` to install all dependencies.
-4. Create a `.env` file in the root of the Frontend directory and add your API keys:
+2. Run `npm install` to install all dependencies.
+3. Create a `.env` file in the root directory and add your API keys:
    - VITE_FINNHUB_API_KEY
    - VITE_GEMINI_API_KEY
    - VITE_NEWS_API_KEY
-5. Run `npm run dev` to start the local development server.
+4. Run `npm run dev` to start the local development server.
 
 ## Technologies Used
 
