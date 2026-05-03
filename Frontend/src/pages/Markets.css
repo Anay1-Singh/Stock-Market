@@ -1,0 +1,29 @@
+.markets-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.market-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.markets-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .markets-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.markets-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

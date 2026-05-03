@@ -1,0 +1,120 @@
+.breaking-news-overlay {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 600px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.breaking-news-overlay.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.breaking-news-overlay.hide {
+  opacity: 0;
+  transform: translate(-50%, -20px);
+  pointer-events: none;
+}
+
+.breaking-news-banner {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--color-red);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.3), 0 8px 10px -6px rgba(239, 68, 68, 0.2);
+  overflow: hidden;
+}
+
+/* Red signal pulsing effect */
+.signal-dot {
+  position: absolute;
+  top: 1.75rem;
+  left: 1.5rem;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-red);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.signal-ring {
+  position: absolute;
+  top: 1.75rem;
+  left: 1.5rem;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-red);
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(4); opacity: 0; }
+}
+
+.breaking-news-content {
+  flex: 1;
+  margin-left: 1.5rem; /* Space for the signal dot */
+}
+
+.breaking-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.breaking-tag {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--color-red);
+  letter-spacing: 1px;
+}
+
+.breaking-source {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.breaking-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  transition: color 0.2s;
+}
+
+.read-more-btn:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.dismiss-btn {
+  color: var(--text-secondary);
+  transition: color 0.2s;
+  padding: 0.25rem;
+}
+
+.dismiss-btn:hover {
+  color: var(--text-primary);
+}

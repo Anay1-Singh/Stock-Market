@@ -1,0 +1,21 @@
+.chart-container {
+  min-height: 300px;
+  width: 100%;
+}
+
+.custom-tooltip {
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.tooltip-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.tooltip-price {
+  font-size: 1.125rem;
+  font-weight: 700;
+}

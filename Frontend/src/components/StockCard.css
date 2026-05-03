@@ -1,0 +1,65 @@
+.stock-card, .stock-card-small {
+  cursor: pointer;
+}
+
+.stock-card-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+}
+
+.stock-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-symbol {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.stock-name {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.stock-price {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+
+.stock-price-lg {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.stock-change {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.badge-style {
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+}
+
+.bg-green-light {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.bg-red-light {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.align-end {
+  align-items: flex-end;
+}
